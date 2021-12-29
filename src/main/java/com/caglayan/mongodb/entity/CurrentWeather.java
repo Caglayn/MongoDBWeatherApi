@@ -3,6 +3,7 @@ package com.caglayan.mongodb.entity;
 import lombok.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -10,6 +11,7 @@ import java.util.List;
 @ToString
 @Builder
 public class CurrentWeather {
+    private String id;
     private Coordinate coord;
     private List<Weather> weather;
     private String base;
@@ -20,7 +22,6 @@ public class CurrentWeather {
     private long dt;
     private MoreData sys;
     private long timezone;
-    private long id;
     private String name;
     private int cod;
 }
